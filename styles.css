@@ -1,0 +1,98 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /*margin: 0;*/
+  background-color: hwb(255 14% 83%);
+}
+
+.calculator {
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  opacity: 0;
+  width: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  transition: width 3s ease;
+}
+.calculator {
+  width: 300px;
+  opacity: 1;
+}
+ .input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.display {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 18px;
+  background: transparent;
+  color: #fff;
+  transition: all 1s ease;
+  
+}
+h2 {
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: hwb(255 14% 83%);
+  padding: 10px 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.9);
+  transition: all 1s ease; 
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+  transition: all 1s ease;
+}
+.change {
+  background-color: goldenrod;
+}
+.change:hover {
+  background-color: rgb(189, 142, 25);
+}
+
+button {
+  padding: 20px 10px;
+  font-size: 18px;
+  border: none;
+  background-color: #3498db;
+  border-radius: 40px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /* animation: slideInFromRight 1s ease-in */
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
